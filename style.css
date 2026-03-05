@@ -1,0 +1,331 @@
+/* ==========================
+   Скидання відступів та базові стилі
+========================== */
+body {
+    margin: 0;
+    background: #f2f2f2;
+    font-family: 'Playfair Display', serif;
+    display: flex;
+    justify-content: center;
+}
+
+.invitation {
+    width: 420px;
+    background: #ffffff;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* ==========================
+   HERO
+========================== */
+.hero {
+    padding: 0;
+    background-image: url("https://i.postimg.cc/9f3LhVBm/vecteezy-watercolor-eucalyptus-leaf-frame-10978269.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+
+.hero-content {
+    padding: 150px 150px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ==========================
+   Заголовки
+========================== */
+h1, h2 {
+    font-family: 'Marck Script', cursive;
+    color: #2f4f3f;
+}
+
+h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+/* ==========================
+   Дата
+========================== */
+.date {
+    line-height: 1.2;
+    font-weight: 600;
+    color: #2f4f3f;
+    text-align: center;
+}
+
+.date .day-name {
+    font-size: 20px;
+    display: block;
+    margin-bottom: 0;
+}
+
+.date .day-number {
+    font-size: 30px; 
+    font-weight: 800;
+    display: block;
+    margin: 0;
+}
+
+.date .month-name {
+    font-size: 20px;
+    display: block;
+    margin-top: 0;
+}
+
+/* ==========================
+   Invite Text з декоративною картинкою
+========================== */
+.invite-text {
+    position: relative;
+    padding: 100px 25px 40px 25px;
+    z-index: 1;
+}
+
+.invite-text::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 350px;
+    height: 300px;
+    background-image: url("https://i.postimg.cc/43CWgZ1N/vecteezy-watercolor-eucalyptus-leaf-frame-10978389.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scaleX(-1);
+    z-index: 0;
+}
+
+/* ==========================
+   Countdown
+========================== */
+.countdown {
+    padding: 20px 25px;
+    margin-top: -90px;  
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+}
+
+.countdown .time {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.countdown .time div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown .time small {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #2f4f3f;
+}
+
+.countdown span {
+    font-size: 28px;
+    font-weight: 600;
+    display: block;
+}
+
+/* ==========================
+   Buttons
+========================== */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: #5a7d5a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* ==========================
+   Секції з боковими картинками
+========================== */
+.calendar,
+.location,
+.timeline,
+.details,
+.wishes,
+footer {
+    position: relative;
+    padding: 20px 105px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Псевдоелементи left/right */
+.calendar::before,
+.calendar::after,
+.location::before,
+.location::after,
+.timeline::before,
+.timeline::after,
+.details::before,
+.details::after,
+.wishes::before,
+.wishes::after,
+footer::before,
+footer::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Ліва картинка */
+.calendar::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
+.location::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); left: 0; }
+.timeline::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
+.details::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); left: 0; }
+.wishes::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
+footer::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 140px; left: 0px; }
+
+/* Права картинка */
+.calendar::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
+.location::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); right: 0; }
+.timeline::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
+.details::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); right: 0; }
+.wishes::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
+footer::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 120px; right: -24px; }
+
+/* ==========================
+   Calendar внутрішня сітка
+========================== */
+.calendar .weekdays,
+.calendar .dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+    margin-top: 0;
+}
+
+.calendar .dates div {
+    padding: 6px;
+}
+
+/* ==========================
+   Highlight heart
+========================== */
+.highlight-heart-image {
+    position: relative;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    font-weight: 800;
+    color: #2f4f3f;
+    margin: 0 auto;
+}
+
+.highlight-heart-image::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 4px;
+    width: 32px;
+    height: 32px;
+    background-image: url("https://abrakadabra.fun/uploads/posts/2022-03/1648469475_1-abrakadabra-fun-p-serdtse-prozrachnoe-simvol-4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+/* ==========================
+   Location image
+========================== */
+.location-img {
+    display: block;
+    width: 90%;
+    max-width: 180px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 20px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+/* ==========================
+   Footer стиль
+========================== */
+footer {
+    font-family: 'Marck Script', cursive;
+    
+   font-size: 24px;
+   padding: 20px 85px 20px 120px;
+    color: #2f4f3f;
+}
+
+/* ==========================
+   ROTATE WARNING
+========================== */
+#rotate-warning {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    text-align: center;
+    padding: 20px;
+}
+
+.rotate-box {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+}
+
+.rotate-box p {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.phone {
+    width: 60px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    position: relative;
+    animation: rotatePhone 2s infinite ease-in-out;
+}
+
+.screen {
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    right: 8px;
+    bottom: 10px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+@keyframes rotatePhone {
+    0% { transform: rotate(0deg); }
+    40% { transform: rotate(90deg); }
+    60% { transform: rotate(90deg); }
+    100% { transform: rotate(0deg); }
+}
+
