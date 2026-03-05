@@ -14,7 +14,7 @@ body {
     background: #ffffff;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    overflow: hidden;
+    overflow: visible;
 }
 
 /* ==========================
@@ -165,7 +165,7 @@ h2 {
 .wishes,
 footer {
     position: relative;
-    padding: 20px 105px;
+    padding: 20px 105px 20px 110px;
     overflow: hidden;
     z-index: 2;
 }
@@ -194,20 +194,20 @@ footer::after {
 }
 
 /* Ліва картинка */
-.calendar::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
-.location::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); left: 0; }
-.timeline::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
-.details::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); left: 0; }
-.wishes::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); left: 0; }
-footer::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 140px; left: 0px; }
+.calendar::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; top: -30px}
+.location::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0; }
+.timeline::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; top: -30px }
+.details::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0; }
+.wishes::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; }
+footer::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0px; }
 
 /* Права картинка */
-.calendar::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
-.location::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); right: 0; }
-.timeline::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
-.details::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); right: 0; }
-.wishes::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); right: 0; }
-footer::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 120px; right: -24px; }
+.calendar::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; top: -30px}
+.location::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px;right: 0; }
+.timeline::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; top: -30px }
+.details::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px; right: 0; }
+.wishes::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; }
+footer::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px; right: -5px; }
 
 /* ==========================
    Calendar внутрішня сітка
@@ -272,8 +272,8 @@ footer::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-52424
 footer {
     font-family: 'Marck Script', cursive;
     
-   font-size: 24px;
-   padding: 20px 85px 20px 120px;
+   font-size: 20px;
+   padding: 20px 120px 20px 120px;
     color: #2f4f3f;
 }
 
@@ -329,3 +329,12 @@ footer {
     100% { transform: rotate(0deg); }
 }
 
+.calendar *,
+.location *,
+.timeline *,
+.details *,
+.wishes *,
+footer * {
+    position: relative;
+    z-index: 2;
+}
