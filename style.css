@@ -202,10 +202,10 @@ footer::after {
 footer::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0px; }
 
 /* Права картинка */
-.calendar::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; top: -30px}
-.location::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px;right: 0; }
+.calendar::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: -4px; top: -30px}
+.location::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px;right: 0px; }
 .timeline::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; top: -30px }
-.details::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px; right: 0; }
+.details::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px; right: -8px; }
 .wishes::after { background-image: url("https://i.postimg.cc/52Wz9tDZ/photo-5242437129202242592-w.jpg"); width: 130px; right: 0; }
 footer::after { background-image: url("https://i.postimg.cc/zGYhDf4s/photo-5242437129202242595-w.jpg"); width: 130px; right: -5px; }
 
