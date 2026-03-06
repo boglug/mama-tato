@@ -196,7 +196,7 @@ footer::after {
 /* Ліва картинка */
 .calendar::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; top: -30px}
 .location::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0; }
-.timeline::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; top: -30px }
+.timeline::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: -1px; top: -30px }
 .details::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0; }
 .wishes::before { background-image: url("https://i.postimg.cc/131FRzLx/photo-5242437129202242593-w.jpg"); width: 130px; left: 0; }
 footer::before { background-image: url("https://i.postimg.cc/zGYhDf44/photo-5242437129202242594-w.jpg"); width: 130px; left: 0px; }
@@ -338,3 +338,4 @@ footer * {
     position: relative;
     z-index: 2;
 }
+
